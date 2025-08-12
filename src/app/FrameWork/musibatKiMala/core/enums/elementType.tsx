@@ -1,0 +1,13 @@
+export enum elementType{
+    section = "section",
+    button = "button",
+    calendar = "calendar",
+    dateCell =  "dateCell",
+    event = "event",
+    monthHeader = "monthHeader",
+    weekHeader = "weekHeader",
+    timeSlot = "timeSlot",
+    navigationButton = "navigationButton",
+    checkbox = "checkbox",
+    DatePicker = "DatePicker",
+}
