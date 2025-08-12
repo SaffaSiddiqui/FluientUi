@@ -23,7 +23,7 @@ export class datePicker extends interactionElement{
         Name: string,
         title: string,
     ){
-        super(elementType.DatePicker, elementCategory.Input, id,  Name, title);
+        super(elementType.DatePicker, elementCategory.interaction, id,  Name, title);
 
     }
 
