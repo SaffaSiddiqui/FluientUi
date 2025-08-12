@@ -10,4 +10,7 @@ export enum elementType{
     navigationButton = "navigationButton",
     checkbox = "checkbox",
     DatePicker = "DatePicker",
+    data = "data",
+    Input = "Input",
+    Action = "Action",
 }
