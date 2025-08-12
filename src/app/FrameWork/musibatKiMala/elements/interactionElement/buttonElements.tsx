@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {JSX} from 'react';
 import { interactionElement } from '../../core/base/interactionElement';
 import { elementType } from '../../core/enums/elementType';
@@ -11,28 +12,31 @@ initializeIcons();
 export class buttonElements extends interactionElement{
     props: IButtonProps;
 // calendar
-    state = {
-    // displayCalendar: false
-    };
+    // state = {displayCalendar: false};
+
     constructor(
         id: string,
         Name: string,
         title: string,
         props: IButtonProps = {},
-        state: any,
+        // state: any,
     ){
         super(elementType.button, elementCategory.interaction, id, Name, title);
         this.props = props;
-        this.state = {displayCalendar: false};
+        // this.state = {displayCalendar: false};
     }
 
 // calendar:-------
-    cal = new CalendarElement(
-    'cal1',
-    'My Calendar',
-    'Select a Date',
-    { value: new Date(), onSelectDate: (date) => console.log(date) }
-  );
+    // cal = new CalendarElement(
+    //     'cal1',
+    //     'My Calendar',
+    //     'Select a Date',
+    //     { value: new Date(), onSelectDate: (date) => console.log(date) }
+    // );
+
+//    toggleCalculator(){
+//             onclick = this.displayCalendar = !this.displayCalendar;
+//     };
 
     menuProps: IContextualMenuProps = {
         items: [
@@ -49,14 +53,12 @@ export class buttonElements extends interactionElement{
             // onClick: () => {
             //     this.state({ displayCalendar: true });
             // }
-            
+            // onclick: this.toggleCalculator,
             },
         ],
     };
     addIcon: IIconProps = { iconName: 'Add' };
-// 
- 
-
+ ////
 
     renderElement(): JSX.Element{
         return(
@@ -87,14 +89,14 @@ export class buttonElements extends interactionElement{
 {/* //////////////////////// */}
                 {/* Show Calendar when state is true */}
             {/* {this.state.displayCalendar && (
-                <CalendarElement
-                    id="cal1"
-                    Name="My Calendar"
-                    title="Select a Date"
-                    value={new Date()}
-                    onSelectDate={(date) => console.log(date)}
-                />
-            )} */}
+                    <CalendarElement
+                        id="cal1"
+                        Name="My Calendar"
+                        title="Select a Date"
+                        value={new Date()}
+                        onSelectDate={(date) => console.log(date)}
+                    />
+                )}  */}
             </>
         );
     }
