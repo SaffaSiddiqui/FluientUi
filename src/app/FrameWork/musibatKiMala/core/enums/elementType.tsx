@@ -17,4 +17,5 @@ export enum elementType{
     link = "link",
     modal = "modal",
     popup = "popup",
+    slider = "slider",
 }

@@ -8,6 +8,7 @@ import { DropdownElement } from './FrameWork/musibatKiMala/elements/interactionE
 import { link } from './FrameWork/musibatKiMala/elements/interactionElement/link';
 import { modal } from './FrameWork/musibatKiMala/elements/interactionElement/Modal';
 import { popup } from './FrameWork/musibatKiMala/elements/interactionElement/popup';
+import { slider } from './FrameWork/musibatKiMala/elements/interactionElement/slider';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -61,6 +62,11 @@ export default function Home() {
     "popup1", "Popup", "popup"
   )
 
+  /* slider: */
+  const Slider = new slider(
+    "slider1", "slider", "slider"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -102,6 +108,11 @@ export default function Home() {
       {/* Popup: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Popup.renderElement()}
+      </div>
+
+      {/* slider: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Slider.renderElement()}
       </div>
 
     </>
