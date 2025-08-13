@@ -18,4 +18,5 @@ export enum elementType{
     modal = "modal",
     popup = "popup",
     slider = "slider",
+    ChoiceGroup = "ChoiceGroup",
 }

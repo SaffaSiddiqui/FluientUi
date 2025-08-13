@@ -9,6 +9,7 @@ import { link } from './FrameWork/musibatKiMala/elements/interactionElement/link
 import { modal } from './FrameWork/musibatKiMala/elements/interactionElement/Modal';
 import { popup } from './FrameWork/musibatKiMala/elements/interactionElement/popup';
 import { slider } from './FrameWork/musibatKiMala/elements/interactionElement/slider';
+import { choiceGroup } from './FrameWork/musibatKiMala/elements/interactionElement/choiceGroup';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -67,6 +68,11 @@ export default function Home() {
     "slider1", "slider", "slider"
   )
 
+  /* ChoiceGroup: */
+  const ChoiceGroup = new choiceGroup(
+    "choice1", "ChoiceGroup", "ChoiceGroup"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -113,6 +119,11 @@ export default function Home() {
       {/* slider: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Slider.renderElement()}
+      </div>
+
+      {/* ChoiceGroup: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {ChoiceGroup.renderElement()}
       </div>
 
     </>
