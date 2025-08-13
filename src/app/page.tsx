@@ -6,6 +6,7 @@ import {checkboxElement} from './FrameWork/musibatKiMala/elements/interactionEle
 import { datePicker } from './FrameWork/musibatKiMala/elements/interactionElement/datePicker';
 import { DropdownElement } from './FrameWork/musibatKiMala/elements/interactionElement/Dropdown';
 import { link } from './FrameWork/musibatKiMala/elements/interactionElement/link';
+import { modal } from './FrameWork/musibatKiMala/elements/interactionElement/Modal';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -49,6 +50,11 @@ export default function Home() {
     "link1", "link", "link"
   )
 
+  /* modal: */
+  const  Modal = new modal(
+    "modal1", "Modal", "modal"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -80,6 +86,11 @@ export default function Home() {
       {/* link: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Link.renderElement()}
+      </div>
+
+      {/* modal: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Modal.renderElement()}
       </div>
 
     </>

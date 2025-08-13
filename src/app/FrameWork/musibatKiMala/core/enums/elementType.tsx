@@ -14,5 +14,6 @@ export enum elementType{
     Input = "Input",
     Action = "Action",
     Dropdown = "Dropdown",
-    link = "link"
+    link = "link",
+    modal = "modal",
 }
