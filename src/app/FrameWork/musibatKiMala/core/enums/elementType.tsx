@@ -20,4 +20,5 @@ export enum elementType{
     slider = "slider",
     ChoiceGroup = "ChoiceGroup",
     SearchBox = "SearchBox",
+    TextField  =  "TextField",
 }

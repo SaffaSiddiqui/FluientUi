@@ -17,7 +17,9 @@ export class searchBox extends interactionElement{
     }
 
     stackTokens: Partial<IStackTokens> = { childrenGap: 20 };
+//    
     filterIcon: IIconProps = { iconName: 'Filter' };
+//    
     searchBoxStyles: Partial<ISearchBoxStyles> = { root: { width: 200 } };
 
 //    
@@ -48,10 +50,10 @@ export class searchBox extends interactionElement{
                     styles={this.searchBoxStyles}
                     placeholder="Search"
                     onEscape={ev => {
-                    console.log('Custom onEscape Called');
+                        console.log('Custom onEscape Called');
                     }}
                     onClear={ev => {
-                    console.log('Custom onClear Called');
+                        console.log('Custom onClear Called');
                     }}
                     onChange={(_, newValue) => console.log('SearchBox onChange fired: ' + newValue)}
                     onSearch={newValue => console.log('SearchBox onSearch fired: ' + newValue)}

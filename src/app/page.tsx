@@ -11,6 +11,7 @@ import { popup } from './FrameWork/musibatKiMala/elements/interactionElement/pop
 import { slider } from './FrameWork/musibatKiMala/elements/interactionElement/slider';
 import { choiceGroup } from './FrameWork/musibatKiMala/elements/interactionElement/choiceGroup';
 import { searchBox } from './FrameWork/musibatKiMala/elements/interactionElement/searchBox';
+import { textField } from './FrameWork/musibatKiMala/elements/interactionElement/textField';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -79,6 +80,11 @@ export default function Home() {
     "box1", "SearchBox", "SearchBox"
   )
 
+  /* TextField: */
+  const TextField = new textField(
+    "field1", "TextField", "TextField"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -135,6 +141,11 @@ export default function Home() {
       {/* SearchBox: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {SearchBox.renderElement()}
+      </div>
+
+      {/* TextField: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {TextField.renderElement()}
       </div>
 
     </>
