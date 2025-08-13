@@ -5,6 +5,7 @@ import {buttonElements} from './FrameWork/musibatKiMala/elements/interactionElem
 import {checkboxElement} from './FrameWork/musibatKiMala/elements/interactionElement/checkbox';
 import { datePicker } from './FrameWork/musibatKiMala/elements/interactionElement/datePicker';
 import { DropdownElement } from './FrameWork/musibatKiMala/elements/interactionElement/Dropdown';
+import { link } from './FrameWork/musibatKiMala/elements/interactionElement/link';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -43,6 +44,11 @@ export default function Home() {
     "drop1", "dropdown", "Dropdown",
   )
 
+  /* link: */
+  const Link = new link(
+    "link1", "link", "link"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -69,6 +75,11 @@ export default function Home() {
       {/* dropdown: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {dropdown.renderElement()}
+      </div>
+
+      {/* link: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Link.renderElement()}
       </div>
 
     </>
