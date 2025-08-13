@@ -21,4 +21,6 @@ export enum elementType{
     ChoiceGroup = "ChoiceGroup",
     SearchBox = "SearchBox",
     TextField  =  "TextField",
+    Toggle = "Toggle",
+    CommandBar = "CommandBar",
 }

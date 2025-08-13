@@ -12,6 +12,8 @@ import { slider } from './FrameWork/musibatKiMala/elements/interactionElement/sl
 import { choiceGroup } from './FrameWork/musibatKiMala/elements/interactionElement/choiceGroup';
 import { searchBox } from './FrameWork/musibatKiMala/elements/interactionElement/searchBox';
 import { textField } from './FrameWork/musibatKiMala/elements/interactionElement/textField';
+import { toggle } from './FrameWork/musibatKiMala/elements/interactionElement/toggle';
+import { commandBar } from './FrameWork/musibatKiMala/elements/interactionElement/commandBar';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -84,6 +86,16 @@ export default function Home() {
   const TextField = new textField(
     "field1", "TextField", "TextField"
   )
+  
+  /* Toggle: */
+  const Toggle = new toggle(
+    "toggle1", "Toggle", "Toggle"
+  )
+
+  /* commandBar: */
+  const CommandBar = new commandBar(
+    "Bar1", "CommandBar", "CommandBar"
+  )
 
   return (
     <>
@@ -146,6 +158,16 @@ export default function Home() {
       {/* TextField: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {TextField.renderElement()}
+      </div>
+
+      {/* Toggle: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Toggle.renderElement()}
+      </div>
+
+      {/* CommandBar: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {CommandBar.renderElement()}
       </div>
 
     </>
