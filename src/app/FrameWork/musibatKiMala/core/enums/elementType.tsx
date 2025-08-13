@@ -19,4 +19,5 @@ export enum elementType{
     popup = "popup",
     slider = "slider",
     ChoiceGroup = "ChoiceGroup",
+    SearchBox = "SearchBox",
 }

@@ -10,6 +10,7 @@ import { modal } from './FrameWork/musibatKiMala/elements/interactionElement/Mod
 import { popup } from './FrameWork/musibatKiMala/elements/interactionElement/popup';
 import { slider } from './FrameWork/musibatKiMala/elements/interactionElement/slider';
 import { choiceGroup } from './FrameWork/musibatKiMala/elements/interactionElement/choiceGroup';
+import { searchBox } from './FrameWork/musibatKiMala/elements/interactionElement/searchBox';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -73,6 +74,11 @@ export default function Home() {
     "choice1", "ChoiceGroup", "ChoiceGroup"
   )
 
+  /* SearchBox: */
+  const SearchBox = new searchBox(
+    "box1", "SearchBox", "SearchBox"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -124,6 +130,11 @@ export default function Home() {
       {/* ChoiceGroup: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {ChoiceGroup.renderElement()}
+      </div>
+
+      {/* SearchBox: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {SearchBox.renderElement()}
       </div>
 
     </>
