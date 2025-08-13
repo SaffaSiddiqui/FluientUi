@@ -13,4 +13,5 @@ export enum elementType{
     data = "data",
     Input = "Input",
     Action = "Action",
+    Dropdown = "Dropdown",
 }

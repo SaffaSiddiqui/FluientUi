@@ -4,10 +4,12 @@ import { IButtonProps, ICalendar } from '@fluentui/react';
 import {buttonElements} from './FrameWork/musibatKiMala/elements/interactionElement/buttonElements';
 import {checkboxElement} from './FrameWork/musibatKiMala/elements/interactionElement/checkbox';
 import { datePicker } from './FrameWork/musibatKiMala/elements/interactionElement/datePicker';
+import { DropdownElement } from './FrameWork/musibatKiMala/elements/interactionElement/Dropdown';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
 
+  /*button: */
   const saveButton = new buttonElements("btn1","saveButtton","Save",{
     children: "Save Widget",
     onClick: () => alert("Saved!"),
@@ -27,13 +29,18 @@ export default function Home() {
   //   { value: new Date(), onSelectDate: (date) => console.log(date) }
   // );
 
-  //checkbox
+  /* checkbox: */
   const box = new checkboxElement(
     "box1","my box", "select a date",
   )
 
   const datepicker = new datePicker(
     "pick1","my datepicker", 'select date',
+  )
+
+  /* dropdown: */
+  const dropdown = new DropdownElement(
+    "drop1", "dropdown", "Dropdown",
   )
 
   return (
@@ -57,6 +64,11 @@ export default function Home() {
       {/* datePicker */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {datepicker.renderElement()}
+      </div>
+
+      {/* dropdown: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {dropdown.renderElement()}
       </div>
 
     </>
