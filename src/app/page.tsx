@@ -7,6 +7,7 @@ import { datePicker } from './FrameWork/musibatKiMala/elements/interactionElemen
 import { DropdownElement } from './FrameWork/musibatKiMala/elements/interactionElement/Dropdown';
 import { link } from './FrameWork/musibatKiMala/elements/interactionElement/link';
 import { modal } from './FrameWork/musibatKiMala/elements/interactionElement/Modal';
+import { popup } from './FrameWork/musibatKiMala/elements/interactionElement/popup';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -55,6 +56,11 @@ export default function Home() {
     "modal1", "Modal", "modal"
   )
 
+  /*  popup: */
+  const Popup = new popup(
+    "popup1", "Popup", "popup"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -91,6 +97,11 @@ export default function Home() {
       {/* modal: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Modal.renderElement()}
+      </div>
+
+      {/* Popup: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Popup.renderElement()}
       </div>
 
     </>
