@@ -20,6 +20,7 @@ import { PivotElement } from './FrameWork/musibatKiMala/elements/interactionElem
 import { MessageBarElement } from './FrameWork/musibatKiMala/elements/interactionElement/MessageBar';
 import { TeachingBubbeElement } from './FrameWork/musibatKiMala/elements/interactionElement/TeachingBubbleElement';
 import { CalloutElement } from './FrameWork/musibatKiMala/elements/interactionElement/CalloutElement';
+import { DialogBoxElement } from './FrameWork/musibatKiMala/elements/interactionElement/DialogBoxElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -133,6 +134,11 @@ export default function Home() {
     "Call1", "Callout", "Callout"
   )
 
+  /* DialogBox: */
+  const DialogBox = new DialogBoxElement(
+    "Dialog1", "DialogBox", "DialogBox"
+  )
+
 
 /////////
   return (
@@ -236,6 +242,11 @@ export default function Home() {
       {/* Callout: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Callout.renderElement()}
+      </div>
+
+      {/* DialogBox: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {DialogBox.renderElement()}
       </div>
 
     </>

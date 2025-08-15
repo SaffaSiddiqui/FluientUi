@@ -29,4 +29,5 @@ export enum elementType{
     MessageBar = "MessageBar",
     TeachingBubble = "TeachingBubble",
     Callout = "Callout",
+    Dialog = "Dialog",
 }
