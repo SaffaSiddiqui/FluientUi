@@ -28,4 +28,5 @@ export enum elementType{
     Pivot =  "Pivot",
     MessageBar = "MessageBar",
     TeachingBubble = "TeachingBubble",
+    Callout = "Callout",
 }

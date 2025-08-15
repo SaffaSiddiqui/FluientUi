@@ -19,6 +19,7 @@ import { NavElement } from './FrameWork/musibatKiMala/elements/interactionElemen
 import { PivotElement } from './FrameWork/musibatKiMala/elements/interactionElement/PivotElement';
 import { MessageBarElement } from './FrameWork/musibatKiMala/elements/interactionElement/MessageBar';
 import { TeachingBubbeElement } from './FrameWork/musibatKiMala/elements/interactionElement/TeachingBubbleElement';
+import { CalloutElement } from './FrameWork/musibatKiMala/elements/interactionElement/CalloutElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -127,6 +128,11 @@ export default function Home() {
     "Teaching1", "TeachingBubble", "TeachingBubble"
   )
 
+  /* Callout: */
+  const Callout = new CalloutElement(
+    "Call1", "Callout", "Callout"
+  )
+
 
 /////////
   return (
@@ -225,6 +231,11 @@ export default function Home() {
       {/* TeachingBubble: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {TeachingBubble.renderElement()}
+      </div>
+
+      {/* Callout: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Callout.renderElement()}
       </div>
 
     </>
