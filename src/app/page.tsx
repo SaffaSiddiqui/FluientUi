@@ -24,6 +24,8 @@ import { DialogBoxElement } from './FrameWork/musibatKiMala/elements/interaction
 import { LabelElement } from './FrameWork/musibatKiMala/elements/interactionElement/LabelElement';
 import { RatingElement } from './FrameWork/musibatKiMala/elements/interactionElement/RatingElement';
 import { SpinButtonElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinButtonElement';
+import { colorPicker } from './FrameWork/musibatKiMala/elements/interactionElement/colorPicker';
+import { peoplePicker } from './FrameWork/musibatKiMala/elements/interactionElement/peoplePicker';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -157,6 +159,16 @@ export default function Home() {
     "Spin1", "SpinButton", "SpinButton"
   )
 
+  /* ColorPicker: */
+  const ColorPicker = new colorPicker(
+    "Color1", "ColorPicker", "ColorPicker"
+  )
+
+  /* PeoplePicker: */
+  const PeoplePicker = new peoplePicker(
+    "Picker1", "PeoplePicker", "PeoplePicker"
+  )
+
 
 /////////
   return (
@@ -280,6 +292,16 @@ export default function Home() {
       {/* SpinButton: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {SpinButton.renderElement()}
+      </div>
+
+      {/* ColorPicker: */}
+      {/* <div style={{ marginTop: "20px", padding:"10px"}}>
+        {ColorPicker.renderElement()}
+      </div> */}
+
+      {/* PeoplePicker: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {PeoplePicker.renderElement()}
       </div>
 
     </>

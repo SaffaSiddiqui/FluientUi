@@ -33,4 +33,6 @@ export enum elementType{
     Label = "Label",
     Rating = "Rating",
     SpinButton = "SpinButton",
+    ColorPicker = "ColorPicker",
+    PeoplePicker = "PeoplePicker",
 }
