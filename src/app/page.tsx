@@ -17,6 +17,7 @@ import { commandBar } from './FrameWork/musibatKiMala/elements/interactionElemen
 import { ContextualMenu } from './FrameWork/musibatKiMala/elements/interactionElement/ContextualMenu';
 import { NavElement } from './FrameWork/musibatKiMala/elements/interactionElement/NavElement';
 import { PivotElement } from './FrameWork/musibatKiMala/elements/interactionElement/PivotElement';
+import { MessageBarElement } from './FrameWork/musibatKiMala/elements/interactionElement/MessageBar';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -115,6 +116,11 @@ export default function Home() {
     "Pivot1", "Pivot", "Pivot"
   )
 
+  /* MessageBar: */
+  const MessageBar = new MessageBarElement(
+    "Bar1", "MessageBar", "MessageBar"
+  )
+
 
 /////////
   return (
@@ -203,6 +209,11 @@ export default function Home() {
       {/* Pivot: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Pivot.renderElement()}
+      </div>
+      
+      {/* MessageBar: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {MessageBar.renderElement()}
       </div>
 
     </>

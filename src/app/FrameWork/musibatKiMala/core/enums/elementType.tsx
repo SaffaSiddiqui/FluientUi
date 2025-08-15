@@ -26,4 +26,5 @@ export enum elementType{
     ContextualMenu = "ContextualMenu",
     Navbar = "Navbar",
     Pivot =  "Pivot",
+    MessageBar = "MessageBar",
 }
