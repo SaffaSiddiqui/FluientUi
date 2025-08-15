@@ -23,4 +23,5 @@ export enum elementType{
     TextField  =  "TextField",
     Toggle = "Toggle",
     CommandBar = "CommandBar",
+    ContextualMenu = "ContextualMenu",
 }

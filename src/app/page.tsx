@@ -14,6 +14,7 @@ import { searchBox } from './FrameWork/musibatKiMala/elements/interactionElement
 import { textField } from './FrameWork/musibatKiMala/elements/interactionElement/textField';
 import { toggle } from './FrameWork/musibatKiMala/elements/interactionElement/toggle';
 import { commandBar } from './FrameWork/musibatKiMala/elements/interactionElement/commandBar';
+import { ContextualMenu } from './FrameWork/musibatKiMala/elements/interactionElement/ContextualMenu';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -97,6 +98,11 @@ export default function Home() {
     "Bar1", "CommandBar", "CommandBar"
   )
 
+  /* ContextualMenu: */
+  const contextualMenu = new ContextualMenu(
+    "Cont1", "ContextualMenu", "ContextualMenu"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -168,6 +174,11 @@ export default function Home() {
       {/* CommandBar: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {CommandBar.renderElement()}
+      </div>
+
+      {/* ContextualMenu: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {contextualMenu.renderElement()}
       </div>
 
     </>
