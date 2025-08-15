@@ -16,6 +16,7 @@ import { toggle } from './FrameWork/musibatKiMala/elements/interactionElement/to
 import { commandBar } from './FrameWork/musibatKiMala/elements/interactionElement/commandBar';
 import { ContextualMenu } from './FrameWork/musibatKiMala/elements/interactionElement/ContextualMenu';
 import { NavElement } from './FrameWork/musibatKiMala/elements/interactionElement/NavElement';
+import { PivotElement } from './FrameWork/musibatKiMala/elements/interactionElement/PivotElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -109,6 +110,13 @@ export default function Home() {
     "Nav1", "NavBar", "NavBar"
   )
 
+  /* Pivot: */
+  const Pivot = new PivotElement(
+    "Pivot1", "Pivot", "Pivot"
+  )
+
+
+/////////
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -190,6 +198,11 @@ export default function Home() {
       {/* NavBar: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {NavBar.renderElement()}
+      </div>
+
+      {/* Pivot: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Pivot.renderElement()}
       </div>
 
     </>
