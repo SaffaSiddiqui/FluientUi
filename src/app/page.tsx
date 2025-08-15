@@ -15,6 +15,7 @@ import { textField } from './FrameWork/musibatKiMala/elements/interactionElement
 import { toggle } from './FrameWork/musibatKiMala/elements/interactionElement/toggle';
 import { commandBar } from './FrameWork/musibatKiMala/elements/interactionElement/commandBar';
 import { ContextualMenu } from './FrameWork/musibatKiMala/elements/interactionElement/ContextualMenu';
+import { NavElement } from './FrameWork/musibatKiMala/elements/interactionElement/NavElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -103,6 +104,11 @@ export default function Home() {
     "Cont1", "ContextualMenu", "ContextualMenu"
   )
 
+  /* Navbar: */
+  const NavBar = new NavElement(
+    "Nav1", "NavBar", "NavBar"
+  )
+
   return (
     <>
       <div style={{display: "flex", gap: "10px", padding:"10px"}}>
@@ -179,6 +185,11 @@ export default function Home() {
       {/* ContextualMenu: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {contextualMenu.renderElement()}
+      </div>
+
+      {/* NavBar: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {NavBar.renderElement()}
       </div>
 
     </>
