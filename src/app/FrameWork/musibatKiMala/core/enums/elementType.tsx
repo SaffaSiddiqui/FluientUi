@@ -30,4 +30,7 @@ export enum elementType{
     TeachingBubble = "TeachingBubble",
     Callout = "Callout",
     Dialog = "Dialog",
+    Label = "Label",
+    Rating = "Rating",
+    SpinButton = "SpinButton",
 }

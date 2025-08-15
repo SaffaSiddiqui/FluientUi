@@ -21,6 +21,9 @@ import { MessageBarElement } from './FrameWork/musibatKiMala/elements/interactio
 import { TeachingBubbeElement } from './FrameWork/musibatKiMala/elements/interactionElement/TeachingBubbleElement';
 import { CalloutElement } from './FrameWork/musibatKiMala/elements/interactionElement/CalloutElement';
 import { DialogBoxElement } from './FrameWork/musibatKiMala/elements/interactionElement/DialogBoxElement';
+import { LabelElement } from './FrameWork/musibatKiMala/elements/interactionElement/LabelElement';
+import { RatingElement } from './FrameWork/musibatKiMala/elements/interactionElement/RatingElement';
+import { SpinButtonElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinButtonElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -139,6 +142,21 @@ export default function Home() {
     "Dialog1", "DialogBox", "DialogBox"
   )
 
+  /* Label: */
+  const Label = new LabelElement(
+    "Label1", "Label", "Label"
+  )
+
+  /* Rating: */
+  const Rating = new RatingElement(
+    "Rating1", "Rating", "Rating" 
+  )
+
+  /* SpinButton: */
+  const SpinButton = new SpinButtonElement(
+    "Spin1", "SpinButton", "SpinButton"
+  )
+
 
 /////////
   return (
@@ -247,6 +265,21 @@ export default function Home() {
       {/* DialogBox: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {DialogBox.renderElement()}
+      </div>
+
+      {/* Label: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Label.renderElement()}
+      </div>
+
+      {/* Rating: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Rating.renderElement()}
+      </div>
+
+      {/* SpinButton: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {SpinButton.renderElement()}
       </div>
 
     </>
