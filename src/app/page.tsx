@@ -18,6 +18,7 @@ import { ContextualMenu } from './FrameWork/musibatKiMala/elements/interactionEl
 import { NavElement } from './FrameWork/musibatKiMala/elements/interactionElement/NavElement';
 import { PivotElement } from './FrameWork/musibatKiMala/elements/interactionElement/PivotElement';
 import { MessageBarElement } from './FrameWork/musibatKiMala/elements/interactionElement/MessageBar';
+import { TeachingBubbeElement } from './FrameWork/musibatKiMala/elements/interactionElement/TeachingBubbleElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -121,6 +122,11 @@ export default function Home() {
     "Bar1", "MessageBar", "MessageBar"
   )
 
+  /* TeachingBubble: */
+  const TeachingBubble = new TeachingBubbeElement(
+    "Teaching1", "TeachingBubble", "TeachingBubble"
+  )
+
 
 /////////
   return (
@@ -214,6 +220,11 @@ export default function Home() {
       {/* MessageBar: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {MessageBar.renderElement()}
+      </div>
+      
+      {/* TeachingBubble: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {TeachingBubble.renderElement()}
       </div>
 
     </>

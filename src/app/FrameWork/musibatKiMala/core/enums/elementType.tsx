@@ -27,4 +27,5 @@ export enum elementType{
     Navbar = "Navbar",
     Pivot =  "Pivot",
     MessageBar = "MessageBar",
+    TeachingBubble = "TeachingBubble",
 }
