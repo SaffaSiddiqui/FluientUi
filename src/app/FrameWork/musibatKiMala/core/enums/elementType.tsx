@@ -37,4 +37,5 @@ export enum elementType{
     PeoplePicker = "PeoplePicker",
     Picker = "Picker",
     SwatchColorPicker = "SwatchColorPicker",
+    TimePicker = "TimePicker",
 }

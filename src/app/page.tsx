@@ -28,6 +28,7 @@ import { colorPicker } from './FrameWork/musibatKiMala/elements/interactionEleme
 import { peoplePicker } from './FrameWork/musibatKiMala/elements/interactionElement/peoplePicker';
 import { PickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/PickersElement';
 import { SwatchColorPickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SwatchColorPickerElement';
+import { TimePickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/TimePickerElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -181,6 +182,11 @@ export default function Home() {
     "Color1", "SwatchColorPicker", "SwatchColorPicker"
   )
 
+  /* TimePicker: */
+  const TimePicker = new TimePickerElement(
+    "Time1", "TimePicker", "TimePicker"
+  )
+
 
 /////////
   return (
@@ -324,6 +330,11 @@ export default function Home() {
       {/* SwatchColorPicker: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {SwatchColorPicker.renderElement()}
+      </div>
+
+      {/* TimePicker: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {TimePicker.renderElement()}
       </div>
 
     </>
