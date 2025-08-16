@@ -39,6 +39,7 @@ import { OverflowSetElement } from './FrameWork/musibatKiMala/elements/interacti
 import { CoachmarkElement } from './FrameWork/musibatKiMala/elements/interactionElement/CoachmarkElement';
 import { ProgressIndicatorElement } from './FrameWork/musibatKiMala/elements/interactionElement/ProgressIndicatorElement';
 import { ShimmerElement } from './FrameWork/musibatKiMala/elements/interactionElement/ShimmerElement';
+import { SpinnerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinnerElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -247,6 +248,11 @@ export default function Home() {
     "Shimmer1", "Shimmer", "Shimmer"
   )
 
+  /* Spinner: */
+  const Spinner = new SpinnerElement(
+    "Spinner1", "Spinner", "Spinner"
+  )
+
 
 /////////
   return (
@@ -445,6 +451,11 @@ export default function Home() {
       {/* Shimmer */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Shimmer.renderElement()}
+      </div>
+
+      {/* Spinner: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Spinner.renderElement()}
       </div>
 
     </>

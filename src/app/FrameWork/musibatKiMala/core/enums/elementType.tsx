@@ -48,4 +48,5 @@ export enum elementType{
     Coachmark = "Coachmark",
     ProgressIndicator  = "ProgressIndicator",
     Shimmer = "Shimmer",
+    Spinner = "Spinner",
 }
