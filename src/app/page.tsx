@@ -26,6 +26,7 @@ import { RatingElement } from './FrameWork/musibatKiMala/elements/interactionEle
 import { SpinButtonElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinButtonElement';
 import { colorPicker } from './FrameWork/musibatKiMala/elements/interactionElement/colorPicker';
 import { peoplePicker } from './FrameWork/musibatKiMala/elements/interactionElement/peoplePicker';
+import { PickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/PickersElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -169,6 +170,11 @@ export default function Home() {
     "Picker1", "PeoplePicker", "PeoplePicker"
   )
 
+  /* Picker: */
+  const Picker = new PickerElement(
+    "Picker1", "Picker", "Picker"
+  )
+
 
 /////////
   return (
@@ -302,6 +308,11 @@ export default function Home() {
       {/* PeoplePicker: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {PeoplePicker.renderElement()}
+      </div>
+
+      {/* Picker: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Picker.renderElement()}
       </div>
 
     </>
