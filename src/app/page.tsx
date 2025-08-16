@@ -29,6 +29,7 @@ import { peoplePicker } from './FrameWork/musibatKiMala/elements/interactionElem
 import { PickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/PickersElement';
 import { SwatchColorPickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SwatchColorPickerElement';
 import { TimePickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/TimePickerElement';
+import { ActivityItemElement } from './FrameWork/musibatKiMala/elements/interactionElement/ActivityItemElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -187,6 +188,11 @@ export default function Home() {
     "Time1", "TimePicker", "TimePicker"
   )
 
+  /* Activity Item: */
+  const ActivityItem = new ActivityItemElement(
+    "Item1", "Activity Item", "Activity Item"
+  )
+
 
 /////////
   return (
@@ -335,6 +341,11 @@ export default function Home() {
       {/* TimePicker: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {TimePicker.renderElement()}
+      </div>
+
+      {/* Activity Item: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {ActivityItem.renderElement()}
       </div>
 
     </>
