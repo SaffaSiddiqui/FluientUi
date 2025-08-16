@@ -27,6 +27,7 @@ import { SpinButtonElement } from './FrameWork/musibatKiMala/elements/interactio
 import { colorPicker } from './FrameWork/musibatKiMala/elements/interactionElement/colorPicker';
 import { peoplePicker } from './FrameWork/musibatKiMala/elements/interactionElement/peoplePicker';
 import { PickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/PickersElement';
+import { SwatchColorPickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SwatchColorPickerElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -175,6 +176,11 @@ export default function Home() {
     "Picker1", "Picker", "Picker"
   )
 
+  /* SwatchColorPicker: */
+  const SwatchColorPicker = new SwatchColorPickerElement(
+    "Color1", "SwatchColorPicker", "SwatchColorPicker"
+  )
+
 
 /////////
   return (
@@ -313,6 +319,11 @@ export default function Home() {
       {/* Picker: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Picker.renderElement()}
+      </div>
+
+      {/* SwatchColorPicker: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {SwatchColorPicker.renderElement()}
       </div>
 
     </>
