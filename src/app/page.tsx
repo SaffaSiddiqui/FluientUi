@@ -38,6 +38,7 @@ import { HoverCardElement } from './FrameWork/musibatKiMala/elements/interaction
 import { OverflowSetElement } from './FrameWork/musibatKiMala/elements/interactionElement/OverflowSetElement';
 import { CoachmarkElement } from './FrameWork/musibatKiMala/elements/interactionElement/CoachmarkElement';
 import { ProgressIndicatorElement } from './FrameWork/musibatKiMala/elements/interactionElement/ProgressIndicatorElement';
+import { ShimmerElement } from './FrameWork/musibatKiMala/elements/interactionElement/ShimmerElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -241,6 +242,11 @@ export default function Home() {
     "ProgressIndicator1", "ProgressIndicator", "ProgressIndicator"
   )
 
+  /* Shimmer: */
+  const Shimmer = new ShimmerElement(
+    "Shimmer1", "Shimmer", "Shimmer"
+  )
+
 
 /////////
   return (
@@ -432,8 +438,13 @@ export default function Home() {
       </div>
 
       {/* ProgressIndicator */}
-      <div style={{ marginTop: "20px", padding:"100px"}}>
+      <div style={{ marginTop: "20px", padding:"10px"}}>
         {ProgressIndicator.renderElement()}
+      </div>
+
+      {/* Shimmer */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Shimmer.renderElement()}
       </div>
 
     </>

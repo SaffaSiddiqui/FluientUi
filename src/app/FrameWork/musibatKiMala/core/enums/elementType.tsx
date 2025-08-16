@@ -47,4 +47,5 @@ export enum elementType{
     OverflowSet = "OverflowSet",
     Coachmark = "Coachmark",
     ProgressIndicator  = "ProgressIndicator",
+    Shimmer = "Shimmer",
 }

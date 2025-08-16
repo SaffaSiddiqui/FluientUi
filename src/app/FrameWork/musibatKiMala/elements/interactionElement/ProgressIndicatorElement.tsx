@@ -14,17 +14,12 @@ export class ProgressIndicatorElement extends interactionElement{
         super(elementType.ProgressIndicator, elementCategory.interaction, id, Name, title);
     }
 
-
     
     intervalDelay = 100;
     intervalIncrement = 0.01;
 //
 
-
-
-
     renderElement(): JSX.Element {
-
 
         const [percentComplete, setPercentComplete] = React.useState(0);
         React.useEffect(() => {
