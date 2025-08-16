@@ -40,6 +40,7 @@ import { CoachmarkElement } from './FrameWork/musibatKiMala/elements/interaction
 import { ProgressIndicatorElement } from './FrameWork/musibatKiMala/elements/interactionElement/ProgressIndicatorElement';
 import { ShimmerElement } from './FrameWork/musibatKiMala/elements/interactionElement/ShimmerElement';
 import { SpinnerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinnerElement';
+import { PanelElement } from './FrameWork/musibatKiMala/elements/interactionElement/PanelElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -253,6 +254,11 @@ export default function Home() {
     "Spinner1", "Spinner", "Spinner"
   )
 
+  /* Panel: */
+  const Panel = new PanelElement(
+    "Panel1", "Panel", "Panel"
+  )
+
 
 /////////
   return (
@@ -456,6 +462,11 @@ export default function Home() {
       {/* Spinner: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Spinner.renderElement()}
+      </div>
+
+      {/* Panel */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Panel.renderElement()}
       </div>
 
     </>

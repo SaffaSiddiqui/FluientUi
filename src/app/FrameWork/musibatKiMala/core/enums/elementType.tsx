@@ -49,4 +49,5 @@ export enum elementType{
     ProgressIndicator  = "ProgressIndicator",
     Shimmer = "Shimmer",
     Spinner = "Spinner",
+    Panel = "Panel",
 }
