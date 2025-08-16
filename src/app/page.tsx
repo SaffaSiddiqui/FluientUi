@@ -32,6 +32,7 @@ import { TimePickerElement } from './FrameWork/musibatKiMala/elements/interactio
 import { ActivityItemElement } from './FrameWork/musibatKiMala/elements/interactionElement/ActivityItemElement';
 import { DetailListElement } from './FrameWork/musibatKiMala/elements/interactionElement/DetailsListElement';
 import { DocumentCardElement } from './FrameWork/musibatKiMala/elements/interactionElement/DocumentCardElement';
+import { FacepileElement } from './FrameWork/musibatKiMala/elements/interactionElement/FacepileElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -205,6 +206,11 @@ export default function Home() {
     "Card1", "Document Card", "Document Card"
   )
 
+  /* Facepile: */
+  const Facepile = new FacepileElement(
+    "Facepile1", "Facepile", "Facepile"
+  )
+
 
 /////////
   return (
@@ -368,6 +374,11 @@ export default function Home() {
       {/* Document Card: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {DocumentCard.renderElement()}
+      </div>
+
+      {/* Facepile: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {Facepile.renderElement()}
       </div>
 
     </>

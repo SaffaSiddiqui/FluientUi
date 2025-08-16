@@ -41,4 +41,5 @@ export enum elementType{
     ActivityItem = "ActivityItem",
     DetailList = "DetailList",
     DocumentCard = "DocumentCard",
+    Facepile = "Facepile",
 }
