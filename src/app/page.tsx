@@ -36,6 +36,8 @@ import { FacepileElement } from './FrameWork/musibatKiMala/elements/interactionE
 import { GroupedListElement } from './FrameWork/musibatKiMala/elements/interactionElement/GroupedListElement';
 import { HoverCardElement } from './FrameWork/musibatKiMala/elements/interactionElement/HoverCardElement';
 import { OverflowSetElement } from './FrameWork/musibatKiMala/elements/interactionElement/OverflowSetElement';
+import { CoachmarkElement } from './FrameWork/musibatKiMala/elements/interactionElement/CoachmarkElement';
+import { ProgressIndicatorElement } from './FrameWork/musibatKiMala/elements/interactionElement/ProgressIndicatorElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -229,6 +231,16 @@ export default function Home() {
     "Over1", "OverflowSet", "OverflowSet"
   )
 
+  /* Coachmark: */
+  const Coachmark = new CoachmarkElement(
+    "Coahmark1", "Coachmark", "Coachmark"
+  )
+
+  /* ProgressIndicator */
+  const ProgressIndicator = new ProgressIndicatorElement(
+    "ProgressIndicator1", "ProgressIndicator", "ProgressIndicator"
+  )
+
 
 /////////
   return (
@@ -412,6 +424,16 @@ export default function Home() {
       {/* OverflowSet */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {OverflowSet.renderElement()}
+      </div>
+
+      {/* Coachmark */}
+      <div style={{ marginTop: "20px", padding:"100px"}}>
+        {Coachmark.renderElement()}
+      </div>
+
+      {/* ProgressIndicator */}
+      <div style={{ marginTop: "20px", padding:"100px"}}>
+        {ProgressIndicator.renderElement()}
       </div>
 
     </>

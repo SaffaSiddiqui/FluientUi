@@ -45,4 +45,6 @@ export enum elementType{
     GroupedList = "GroupedList",
     HoverCard = "HoverCard",
     OverflowSet = "OverflowSet",
+    Coachmark = "Coachmark",
+    ProgressIndicator  = "ProgressIndicator",
 }
