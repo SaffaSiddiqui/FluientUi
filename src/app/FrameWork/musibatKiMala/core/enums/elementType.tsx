@@ -42,4 +42,7 @@ export enum elementType{
     DetailList = "DetailList",
     DocumentCard = "DocumentCard",
     Facepile = "Facepile",
+    GroupedList = "GroupedList",
+    HoverCard = "HoverCard",
+    OverflowSet = "OverflowSet",
 }

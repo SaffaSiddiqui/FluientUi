@@ -33,6 +33,9 @@ import { ActivityItemElement } from './FrameWork/musibatKiMala/elements/interact
 import { DetailListElement } from './FrameWork/musibatKiMala/elements/interactionElement/DetailsListElement';
 import { DocumentCardElement } from './FrameWork/musibatKiMala/elements/interactionElement/DocumentCardElement';
 import { FacepileElement } from './FrameWork/musibatKiMala/elements/interactionElement/FacepileElement';
+import { GroupedListElement } from './FrameWork/musibatKiMala/elements/interactionElement/GroupedListElement';
+import { HoverCardElement } from './FrameWork/musibatKiMala/elements/interactionElement/HoverCardElement';
+import { OverflowSetElement } from './FrameWork/musibatKiMala/elements/interactionElement/OverflowSetElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -211,6 +214,21 @@ export default function Home() {
     "Facepile1", "Facepile", "Facepile"
   )
 
+  /* Grouped List: */
+  const GroupedList = new GroupedListElement(
+    "Group1", "Grouped List", "Grouped List"
+  )
+
+  /* Hover Card: */
+  const HoverCard = new HoverCardElement(
+    "Hover1", "Hover Card", "Hover Card"
+  )
+
+  /* OverflowSet: */
+  const OverflowSet = new OverflowSetElement(
+    "Over1", "OverflowSet", "OverflowSet"
+  )
+
 
 /////////
   return (
@@ -379,6 +397,21 @@ export default function Home() {
       {/* Facepile: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Facepile.renderElement()}
+      </div>
+
+      {/* Grouped List: */}
+      {/* <div style={{ marginTop: "20px", padding:"10px"}}>
+        {GroupedList.renderElement()}
+      </div> */}
+
+      {/* Hover Card: */}
+      {/* <div style={{ marginTop: "20px", padding:"10px"}}>
+        {HoverCard.renderElement()}
+      </div> */}
+
+      {/* OverflowSet */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {OverflowSet.renderElement()}
       </div>
 
     </>
