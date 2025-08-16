@@ -30,6 +30,8 @@ import { PickerElement } from './FrameWork/musibatKiMala/elements/interactionEle
 import { SwatchColorPickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SwatchColorPickerElement';
 import { TimePickerElement } from './FrameWork/musibatKiMala/elements/interactionElement/TimePickerElement';
 import { ActivityItemElement } from './FrameWork/musibatKiMala/elements/interactionElement/ActivityItemElement';
+import { DetailListElement } from './FrameWork/musibatKiMala/elements/interactionElement/DetailsListElement';
+import { DocumentCardElement } from './FrameWork/musibatKiMala/elements/interactionElement/DocumentCardElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -193,6 +195,16 @@ export default function Home() {
     "Item1", "Activity Item", "Activity Item"
   )
 
+  /* DetailList: */
+  const DetailList = new DetailListElement(
+    "Detail1", "Detail List", "Detail List"
+  )
+
+  /* Document Card: */
+  const DocumentCard = new DocumentCardElement(
+    "Card1", "Document Card", "Document Card"
+  )
+
 
 /////////
   return (
@@ -346,6 +358,16 @@ export default function Home() {
       {/* Activity Item: */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {ActivityItem.renderElement()}
+      </div>
+
+      {/* Detail List: */}
+      {/* <div style={{ marginTop: "20px", padding:"10px"}}>
+        {DetailList.renderElement()}
+      </div> */}
+
+      {/* Document Card: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {DocumentCard.renderElement()}
       </div>
 
     </>

@@ -39,4 +39,6 @@ export enum elementType{
     SwatchColorPicker = "SwatchColorPicker",
     TimePicker = "TimePicker",
     ActivityItem = "ActivityItem",
+    DetailList = "DetailList",
+    DocumentCard = "DocumentCard",
 }
