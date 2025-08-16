@@ -50,4 +50,5 @@ export enum elementType{
     Shimmer = "Shimmer",
     Spinner = "Spinner",
     Panel = "Panel",
+    ScrollablePane = "ScrollablePane",
 }

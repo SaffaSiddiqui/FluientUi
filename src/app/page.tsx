@@ -41,6 +41,7 @@ import { ProgressIndicatorElement } from './FrameWork/musibatKiMala/elements/int
 import { ShimmerElement } from './FrameWork/musibatKiMala/elements/interactionElement/ShimmerElement';
 import { SpinnerElement } from './FrameWork/musibatKiMala/elements/interactionElement/SpinnerElement';
 import { PanelElement } from './FrameWork/musibatKiMala/elements/interactionElement/PanelElement';
+import { ScrollablePaneElement } from './FrameWork/musibatKiMala/elements/interactionElement/ScrollablePaneElement';
 // import {CalendarElement} from './FrameWork/musibatKiMala/elements/interactionElement/calendar';
 
 export default function Home() {
@@ -259,6 +260,11 @@ export default function Home() {
     "Panel1", "Panel", "Panel"
   )
 
+  /* Scrollable Pane: */
+  const ScrollablePane = new ScrollablePaneElement(
+    "Panel1", "Scrollable Pane", "Scrollable Pane"
+  )
+
 
 /////////
   return (
@@ -467,6 +473,11 @@ export default function Home() {
       {/* Panel */}
       <div style={{ marginTop: "20px", padding:"10px"}}>
         {Panel.renderElement()}
+      </div>
+
+      {/* Scrollable Pane: */}
+      <div style={{ marginTop: "20px", padding:"10px"}}>
+        {ScrollablePane.renderElement()}
       </div>
 
     </>
